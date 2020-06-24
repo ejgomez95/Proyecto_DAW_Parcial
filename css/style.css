@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('roboto.eot');
+  src: url('roboto.eot?#iefix') format('embedded-opentype'),
+  url('roboto.woff') format('woff'),
+  url('roboto.ttf')  format('truetype'),
+  url('roboto.svg#svgFontName') format('svg');
+}
+
+body {
+  background: url(../img/fondoHome.png) no-repeat center top;
+  font-family: Roboto;
+}
+#menu {
+  margin-left: 30%;
+  margin-top: 2%;
+  font-weight: 500;
+}
+
+#logo {
+  margin-left: 5%;
+}
+
+footer {
+  margin-top: 40%;
+  font-weight: 500;
+}
