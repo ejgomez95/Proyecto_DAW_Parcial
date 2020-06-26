@@ -18,6 +18,7 @@
     <body>
       <div class="container-fluid">
       <header class="row">
+      
 
       <nav id="navegacion" class="col-12 col-sm-12 navbar navbar-expand-lg navbar-light bg-warning">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,9 +38,45 @@
       </div>
       </nav>
       </header>
-        <footer class="row">
+    <section id="formulario">
+      <h1>Formulario</h1>
+    <form>
+      <p>
+        <label for="nombres">Nombres:</label>
+        <input type="text" id="nombres" name="nombres" required>
+      </p>
+      <p>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required>
+      </p>
+      <p>
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+      </p>
+      <p>
+        <label for="telefono">Teléfono :</label>
+        <input type="text" id="telefono" name="telefono" required>
+      </p>
+      <p>
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="10" cols="30"></textarea>
+      </p>
+      <p>
+        <input type="checkbox" id="norobot" name="norobot" value="norobot" required>
+        <label for="norobot"> No soy un robot</label><br>
+        <input type="checkbox" id="boletines" name="boletines" value="boletines">
+        <label for="boletines">  Deseo recibir boletines</label><br>
+      </p>
+      <p>
+        <input type="submit" value="Enviar">
+      </p>
+    </form>
+
+    </section>
+
+    <footer class="row">
             <p class="mx-auto">Copyright &copy; 2020 - LastOne</p>
-        </footer>
-      </div>
+    </footer>
+    </div>
     </body>
 </html>
