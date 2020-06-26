@@ -25,3 +25,11 @@ footer {
   margin-top: 40%;
   font-weight: 500;
 }
+
+div#historia3 ul{
+  list-style-type: none;
+}
+
+div#historia3 ul li{
+  padding: 20px 0px 0px 0px;
+}
