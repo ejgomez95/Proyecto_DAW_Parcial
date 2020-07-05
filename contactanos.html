@@ -1,19 +1,25 @@
 <!DOCTYPE html>
-<html lang="ar" dir="ltr">
+<html lang="an" dir="ltr">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-
-        <link href="css/style.css" rel="stylesheet" type="text/css" />
 
         <title>Eternity.ec</title>
 
         <meta name="author" content="Emilio Gomez, Kleber Avelino,
         Nicole Asqui, Edwin Ullaguari" />
         <meta name="keywords" content="EternityEC, DAW, 2020-1S"/>
-
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+        crossorigin="anonymous">
+        
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        </style>
+        
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
       <div class="container-fluid">
@@ -21,25 +27,27 @@
       
 
       <nav id="navegacion" class="col-12 col-sm-12 navbar navbar-expand-lg navbar-light bg-warning">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" aria-expanded="false" 
+        aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
         <img class="ml-5" src="img/logoEternity.png" alt="Logo Eternity" width="10%"/>
-        <div id="menu" class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div  class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          
 
           <li class="nav-item active"><a class="nav-link text-dark" href="menu.html">HOME</a></li>
           <li class="nav-item"><a class="nav-link text-dark" href="nosotros.html">NOSOTROS</a></li>
           <li class="nav-item"><a class="nav-link text-dark" href="promociones.html">PROMOCIONES</a></li>
           <li class="nav-item"><a class="nav-link text-dark" href="preguntas.html">PREGUNTAS</a></li>
           <li class="nav-item"><a class="nav-link text-dark" href="contactanos.html">CONTÁCTANOS</a></li>
+
         </ul>
       </div>
       </nav>
       </header>
     <section id="formulario">
-      <h1>Formulario</h1>
+      <h1>Contáctanos</h1>
     <form>
       <p>
         <label for="nombres">Nombres:</label>
@@ -50,12 +58,16 @@
         <input type="text" id="apellidos" name="apellidos" required placeholder="Gomez Ibanez">
       </p>
       <p>
-        <label for="correo">Correo electrónico:</label>
-        <input type="email" id="correo" name="correo" required placeholder="emilio_gomez11@hotmail.com">
-      </p>
-      <p>
         <label for="telefono">Teléfono Celular :</label>
         <input type="text" id="telefono" name="telefono" required placeholder="0123456789">
+      </p>
+      <p>
+        <label for="nacimiento">Fecha de nacimiento :</label>
+        <input type="date" id="nacimiento" name="nacimiento" required>
+      </p>
+      <p>
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required placeholder="emilio_gomez11@hotmail.com">
       </p>
       <p>
         <label for="mensaje">Mensaje:</label><br>
@@ -64,8 +76,6 @@
       <p>
         <input type="checkbox" id="norobot" name="norobot" value="norobot" required>
         <label for="norobot"> No soy un robot</label><br>
-        <input type="checkbox" id="boletines" name="boletines" value="boletines">
-        <label for="boletines">  Deseo recibir boletines</label><br>
       </p>
       <p>
         <input type="submit" value="Enviar">
@@ -78,5 +88,11 @@
             <p class="mx-auto">Copyright &copy; 2020 - LastOne</p>
     </footer>
     </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- Agregar el script -->
     </body>
 </html>

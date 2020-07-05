@@ -1,20 +1,23 @@
-@font-face {
-  font-family: 'Roboto';
-  src: url('roboto.eot');
-  src: url('roboto.eot?#iefix') format('embedded-opentype'),
-  url('roboto.woff') format('woff'),
-  url('roboto.ttf')  format('truetype'),
-  url('roboto.svg#svgFontName') format('svg');
-}
-
 body {
   background: url(../img/fondoHome.png) no-repeat center top;
-  font-family: Roboto;
 }
-#menu {
+#navbarSupportedContent {
   margin-left: 30%;
   margin-top: 2%;
   font-weight: 500;
+}
+
+.navbar .nav > li > a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  padding-left: 35px;
+  text-decoration: none;
+}
+
+.navbar-default {
+margin-top: 0px;
+border-color: transparent;
 }
 
 #logo {
@@ -32,4 +35,9 @@ div#historia3 ul{
 
 div#historia3 ul li{
   padding: 20px 0px 0px 0px;
+}
+
+#nombres, #apellidos, #telefono, #nacimiento, #correo {
+  width: 250px;
+  height: 25px;
 }
