@@ -38,48 +38,68 @@
 
           <li class="nav-item active"><a class="nav-link text-dark" href="menu.html">HOME</a></li>
           <li class="nav-item"><a class="nav-link text-dark" href="nosotros.html">NOSOTROS</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="promociones.html">PROMOCIONES</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="preguntas.html">PREGUNTAS</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="https://www.instagram.com/eternity.ec/" target="_blank">NOTICIAS</a></li>
+          <!--<li class="nav-item"><a class="nav-link text-dark" href="preguntas.html">PREGUNTAS</a></li>-->
           <li class="nav-item"><a class="nav-link text-dark" href="contactanos.html">CONTÁCTANOS</a></li>
 
         </ul>
       </div>
       </nav>
       </header>
+
     <section id="formulario">
       <h1>Contáctanos</h1>
     <form>
+
       <p>
         <label for="nombres">Nombres:</label>
-        <input type="text" id="nombres" name="nombres" required placeholder="Emilio Jose">
+        <input type="text" id="nombres" class = "form-control" name="nombres" required placeholder="Emilio Jose">
       </p>
+
       <p>
         <label for="apellidos">Apellidos:</label>
-        <input type="text" id="apellidos" name="apellidos" required placeholder="Gomez Ibanez">
+        <input type="text" id="apellidos" class = "form-control" name="apellidos" required placeholder="Gomez Ibanez">
       </p>
+
+      <p>  
+        <div class = "form-group">
+          <label id="genero_label">Género:</label>
+          <select class = "form-control" id="genero">
+            <option value = "hombre">Hombre</option>
+            <option value = "mujer">Mujer</option>
+          </select>
+        </div>
+      </p>
+
       <p>
         <label for="telefono">Teléfono Celular :</label>
-        <input type="text" id="telefono" name="telefono" required placeholder="0123456789">
+        <input type="text" id="telefono" class = "form-control" name="telefono" required placeholder="0123456789">
       </p>
+
       <p>
         <label for="nacimiento">Fecha de nacimiento :</label>
-        <input type="date" id="nacimiento" name="nacimiento" required>
+        <input type="date" id="nacimiento" class = "form-control" name="nacimiento" required>
       </p>
+
       <p>
         <label for="correo">Correo electrónico:</label>
-        <input type="email" id="correo" name="correo" required placeholder="emilio_gomez11@hotmail.com">
+        <input type="email" id="correo" class = "form-control" name="correo" required placeholder="emilio_gomez11@hotmail.com">
       </p>
+
       <p>
         <label for="detalle">Detalle:</label><br>
         <textarea id="detalle" name="detalle" rows="5" cols="30"></textarea>
       </p>
+
       <p>
         <input type="checkbox" id="norobot" name="norobot" value="norobot" required>
         <label for="norobot"> No soy un robot</label><br>
       </p>
+
       <p>
         <input type="submit" value="Enviar">
       </p>
+
     </form>
 
     </section>

@@ -24,9 +24,9 @@
   font-weight: 500;
 }
 
-body{
+p, #genero_label, li, footer{
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 20px;
   text-decoration: none;
 }
@@ -42,7 +42,7 @@ border-color: transparent;
 
 footer {
   margin-top: 40%;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 div#historia3 ul{
@@ -53,7 +53,7 @@ div#historia3 ul li{
   padding: 20px 0px 0px 0px;
 }
 
-#nombres, #apellidos, #telefono, #nacimiento, #correo {
+#nombres, #apellidos, #telefono, #nacimiento, #correo, #genero{
   width: 250px;
-  height: 25px;
+  height: 35px;
 }
