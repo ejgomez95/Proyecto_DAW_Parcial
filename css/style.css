@@ -1,22 +1,10 @@
-@media (max-width: 600px){
-  body{
-    background: url(../img/fondoHome_celulares.png) center top;
-    background-size: contain;
+body{
+  background: url(/img/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   }
-}
-
-@media (min-width: 601px) and (max-width: 1024px){
-  body{
-    background: url(../img/fondoHome_tablets.png) center top;
-    background-size: contain;
-  }
-}
-
-@media (min-width: 1025px){
-  body{
-    background: url(../img/fondoHome.png) center top;
-  }
-}
 
 #navbarSupportedContent {
   margin-left: 30%;
@@ -24,16 +12,30 @@
   font-weight: 500;
 }
 
-p, #genero_label, li, footer{
+h1, h3{
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 20px;
   text-decoration: none;
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contenido #acerca{
+  text-align: center;
+}
 
 .navbar-default {
 margin-top: 0px;
 border-color: transparent;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 #logo {
@@ -45,13 +47,6 @@ footer {
   font-weight: 700;
 }
 
-div#historia3 ul{
-  list-style-type: none;
-}
-
-div#historia3 ul li{
-  padding: 20px 0px 0px 0px;
-}
 
 #nombres, #apellidos, #telefono, #nacimiento, #correo, #genero{
   width: 250px;
