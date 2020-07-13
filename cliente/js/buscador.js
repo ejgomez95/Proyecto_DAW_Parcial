@@ -1,6 +1,6 @@
 let loadCatalogo = () => {
 
-    fetch("http://127.0.0.1:5500/data/catologo.json")
+    fetch("http://127.0.0.1:5500/cliente/data/catologo.json")
       .then(function(resultado){
         return resultado.json()
       })
