@@ -4,6 +4,8 @@
         <meta charset="utf-8">
 
         <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <!-- Add IntroJs styles -->
+        <link href="css/introjs.css" rel="stylesheet">  
 
         <title>Eternity.ec</title>
 
@@ -27,24 +29,37 @@
         <header class="row">
 
         <nav id="navegacion" class="col-12 col-sm-12 navbar navbar-expand-lg navbar-light bg-warning">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
               </button>
-          <img class="ml-5" src="img/logoEternity.png"  href="home.html" alt="Logo Eternity" width="10%"/>
+          <img class="ml-5" src="img/logoEternity.png"  href="home.html" alt="Logo Eternity" width="10%" data-step="1" data-intro="Bievenido a la pagina web de Eternity.ec "/>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
 
 
               <li class="nav-item active"><a class="nav-link text-dark" href="home.html">HOME</a></li>
               <li class="nav-item"><a class="nav-link text-dark" href="nosotros.html">NOSOTROS</a></li>
-              <li class="nav-item"><a class="nav-link text-dark" href="productos.html">PRODUCTOS</a></li>
-              <li class="nav-item"><a class="nav-link text-dark" href="noticias.html">NOTICIAS</a></li>
-              <li class="nav-item"><a class="nav-link text-dark" href="contactanos.html">CONTÁCTANOS</a></li>
+              <li class="nav-item"><a class="nav-link text-dark" href="productos.html" >PRODUCTOS</a></li>
+              <li class="nav-item"><a class="nav-link text-dark" href="noticias.html" >NOTICIAS</a></li>
+              <li class="nav-item"><a class="nav-link text-dark" href="contactanos.html" data-step="6" data-intro="Si necesitas hacernos saber algo, aqui podras contáctarnos">CONTÁCTANOS</a></li>
 
             </ul>
           </div>
         </nav>
       </header>
+
+      <div class = "menu">
+        <a class="btn btn-large btn-success" id="boton" href="javascript:void(0);" onclick="javascript:introJs().start();">Bienvenido</a>
+      </div>
+
+      <div class = "eternityJS" data-step="2" data-intro="La barra de navegacion se ve así. A continuación te mostraremos cada uno de sus componentes">
+        <h4 data-step="3" data-intro="Esta es la pagina principal. Tú estas aqui">HOME</h4>
+        <h4 data-step="4" data-intro="Aqui sabras sobre Eternity.ec y de los creadores de esta pagina">NOSOTROS</h4>
+        <h4 data-step="5" data-intro="Aqui esta el catalogo de Eternity.ec">PRODUCTOS</h4>
+        <h4 data-step="6" data-intro="Descubre sobre las buenas nuevas">NOTICIAS</h4>
+        <h4 data-step="7" data-intro="Si necesitas hacernos saber algo, aqui podras contáctarnos">CONTÁCTANOS</h4>
+      </div>
 
       <section id="cabecera" class = "row">
           <table class= center>
@@ -60,9 +75,9 @@
 
       <footer class="row">
         <ul class="center" id="lista">
-          <li><a href="https://www.instagram.com/eternity.ec/?hl=es-la"><img src="img/icon/instagram.png" alt="instagram" style="float:center" width="50px" height="50px" ></a>
+          <li><a href="https://www.instagram.com/eternity.ec/?hl=es-la" target="_blank"><img src="img/icon/instagram.png" alt="instagram" style="float:center" width="50px" height="50px" ></a>
           </li>
-          <li><a href="https://es-la.facebook.com/eternity.ecu/"><img src="img/icon/facebook.png" alt="facebook" style="float:center" width="50px" height="50px" ></a>
+          <li><a href="https://es-la.facebook.com/eternity.ecu/" target="_blank"><img src="img/icon/facebook.png" alt="facebook" style="float:center" width="50px" height="50px" ></a>
           </li>
           <li><p class="mx-auto">Copyright &copy; 2020 - LastOne</p>
           </li>
@@ -75,7 +90,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-    <script src="js/buscador.js"></script>
+    <script type="text/javascript" src="js/intro.js"></script>
     </body>
 
 </html>
