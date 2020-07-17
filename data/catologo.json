@@ -4,7 +4,7 @@
         "nombre": "Desayuno",
         "keywords": "Feliz Cumpleaños",
         "precio": "$38",
-        "imagen": "./img/catalogo/Desayuno.png",
+        "imagen": "../img/catalogo/Desayuno.png",
         "menu": "Jugo, fruta picada, sándwhich de jamón y queso cheddar, snack saludable, chocolate ferrero"
     },
     {
@@ -12,7 +12,7 @@
         "nombre": "Fresas y cerveza",
         "keywords": "Feliz Cumpleaños",
         "precio": "$35",
-        "imagen": "./img/catalogo/Fresas_Cerveza.png",
+        "imagen": "../img/catalogo/Fresas_Cerveza.png",
         "menu": "Fresas bañadas con chocolate junto con cerveza Corona"
     },
     {
@@ -20,7 +20,7 @@
         "nombre": "Fresas y rosas",
         "keywords": "Feliz Cumpleaños",
         "precio": "$28",
-        "imagen": "./img/catalogo/Fresas_Rosas.png",
+        "imagen": "../img/catalogo/Fresas_Rosas.png",
         "menu": "Frutas bañadas con chocolate"
     },
     {
@@ -28,7 +28,7 @@
         "nombre": "Desayuno",
         "keywords": "Feliz Cumpleaños",
         "precio": "$30",
-        "imagen": "./img/catalogo/Desayuno2.png",
+        "imagen": "../img/catalogo/Desayuno2.png",
         "menu": "Jugo, fruta picada, sándwhich de jamón y queso cheddar, cereal y yogurt"
     },
     {
@@ -36,7 +36,7 @@
         "nombre": "Fresas y cerveza",
         "keywords": "Feliz Cumpleaños",
         "precio": "$35",
-        "imagen": "./img/catalogo/Fresas_Cerveza2.png",
+        "imagen": "../img/catalogo/Fresas_Cerveza2.png",
         "menu": "Fresas bañadas con chocolate, cerveza, chocolates ferreros"
     },
     {
@@ -44,7 +44,7 @@
         "nombre": "Fresas y girasoles",
         "keywords": "Feliz Cumpleaños",
         "precio": "$28",
-        "imagen": "./img/catalogo/Fresas_Girasoles.png",
+        "imagen": "../img/catalogo/Fresas_Girasoles.png",
         "menu": "Frutas bañadas con chocolate"
     },
     {
@@ -52,7 +52,7 @@
         "nombre": "Desayuno",
         "keywords": "Feliz Cumpleaños",
         "precio": "$26",
-        "imagen": "./img/catalogo/Desayuno3.png",
+        "imagen": "../img/catalogo/Desayuno3.png",
         "menu": "Jugo, sándwhich de jamón y queso cheddar, chocolate mym"
     },
     {
@@ -60,7 +60,7 @@
         "nombre": "Fresas y cerveza",
         "keywords": "Feliz Cumpleaños",
         "precio": "$29",
-        "imagen": "./img/catalogo/Fresas_Cerveza3.png",
+        "imagen": "../img/catalogo/Fresas_Cerveza3.png",
         "menu": "Fresas bañadas con chocolate acompañado de cerveza Corona"
     },
     {
@@ -68,7 +68,7 @@
         "nombre": "Fresas y rosas",
         "keywords": "Feliz Cumpleaños",
         "precio": "$28",
-        "imagen": "./img/catalogo/Fresas_Rosas2.png",
+        "imagen": "../img/catalogo/Fresas_Rosas2.png",
         "menu": "Frutas bañadas con chocolate"
     }
 
