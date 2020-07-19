@@ -33,7 +33,7 @@
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
               </button>
-          <img class="ml-5" src="../img/logoEternity.png"  href="home.html" alt="Logo Eternity" width="10%" data-step="1" data-intro="Bievenido a la pagina web de Eternity.ec "/>
+          <img class="ml-5" id="logo" src="../img/logoEternity.png" alt="Logo Eternity" data-step="1" data-intro="Bievenido a la pagina web de Eternity.ec "/>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
 
@@ -58,26 +58,20 @@
         <h4 data-step="4" data-intro="Aqui sabras sobre Eternity.ec y de los creadores de esta pagina">NOSOTROS</h4>
         <h4 data-step="5" data-intro="Aqui esta el catalogo de Eternity.ec">PRODUCTOS</h4>
         <h4 data-step="6" data-intro="Descubre sobre las buenas nuevas">NOTICIAS</h4>
-        <h4 data-step="7" data-intro="Si necesitas hacernos saber algo, aqui podras contáctarnos">CONTÁCTANOS</h4>
+        <h4 data-step="7" data-intro="Finalmente, si necesitas hacernos saber algo, aqui nos podras contactar">CONTÁCTANOS</h4>
       </div>
 
-      <section id="cabecera" class = "row">
-          <table class= center>
-            <tr>
-            <td><a href="productos.html"><img src="../img/lista/fresa.jpg" class="center"  alt="Fresas con chocolate" width="350px" height="350px" ></a><br></td>
-            <td><a href="productos.html"><img src="../img/lista/pancake.jpg" class="center"  alt="Desayunos personalizados" width="350px" height="350px" ></a><br></td>
-            </tr> 
-            <tr>
-            <img id="localEternity" src="../img/local.jpg" class="center"  alt="Local Eternity" /><br>
-            </tr> 
-          </table>
-      </section>
+      <div id="cabecera">
+        <img id="localEternity" src="../img/local.jpg" class="center"  alt="Local Eternity" /><br>  
+        <a href="productos.html"><img src="../img/lista/fresa.jpg" id="fresas" class="center"  alt="Fresas con chocolate" ></a><br>
+        <a href="productos.html"><img src="../img/lista/pancake.jpg" id="pancakes" class="center"  alt="Desayunos personalizados" ></a><br>
+       </div>
 
       <footer class="row">
         <ul class="center" id="lista">
-          <li><a href="https://www.instagram.com/eternity.ec/?hl=es-la" target="_blank"><img src="../img/icon/instagram.png" alt="instagram" style="float:center" width="50px" height="50px" ></a>
+          <li><a href="https://www.instagram.com/eternity.ec/?hl=es-la" target="_blank"><img src="../img/icon/instagram.png" id="instagram" alt="instagram"></a>
           </li>
-          <li><a href="https://es-la.facebook.com/eternity.ecu/" target="_blank"><img src="../img/icon/facebook.png" alt="facebook" style="float:center" width="50px" height="50px" ></a>
+          <li><a href="https://es-la.facebook.com/eternity.ecu/" target="_blank"><img src="../img/icon/facebook.png" id="facebook" alt="facebook"></a>
           </li>
           <li><p class="mx-auto">Copyright &copy; 2020 - LastOne</p>
           </li>
@@ -90,7 +84,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-    <script type="text/javascript" src="../js/intro.js"></script>
+    <script src="../js/intro.js"></script>
     </body>
 
 </html>
