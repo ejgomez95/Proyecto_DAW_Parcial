@@ -10,8 +10,10 @@ En el presente proyecto se presenta una propuesta de diseño web, la misma esta 
 ![Screenshot](img.png)
 ## Recursos utilizados 🛠️
 * HTML.
+* Javascript
 * Manejador de archivos (.js)
 * MAnejador de archivos (.css)
+
 
 ## Autores ✒️
 * Emilio Gomez.
