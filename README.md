@@ -2,17 +2,17 @@
 En el presente proyecto se presenta una propuesta de diseño web, la misma esta dirigida para una entididad comercial llamada Eternity.
 ## El sitio web permite navegar entre las siguientes páginas 📦
 * Home.
-* Nosotro.
+* Nosotros.
 * Productos.
 * Noticias.
-* Contactenos.
+* Contáctanos.
 
 ![Screenshot](img.png)
 ## Recursos utilizados 🛠️
 * HTML.
 * Javascript
-* Manejador de archivos (.js)
-* MAnejador de archivos (.css)
+* Manejador de archivos (.json)
+* Hoja de estilos (.css)
 
 
 ## Autores ✒️
