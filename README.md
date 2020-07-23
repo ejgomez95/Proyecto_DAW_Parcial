@@ -10,3 +10,4 @@ En el presente proyecto se presenta una propuesta de diseño web, la misma esta 
 * HTML.
 * Manejador de archivos (.js)
 * MAnejador de archivos (.css)
+![Screenshot](img.png)
