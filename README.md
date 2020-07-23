@@ -6,6 +6,7 @@ En el presente proyecto se presenta una propuesta de diseño web, la misma esta 
 * Productos.
 * Noticias.
 * Contactenos.
+
 ![Screenshot](img.png)
 ## Recursos utilizados:
 * HTML.
