@@ -6,3 +6,7 @@ En el presente proyecto se presenta una propuesta de diseño web, la misma esta 
 * Productos.
 * Noticias.
 * Contactenos.
+## Recursos utilizados:
+* HTML.
+* Manejador de archivos (.js)
+* MAnejador de archivos (.css)
