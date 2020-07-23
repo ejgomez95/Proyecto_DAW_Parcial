@@ -16,7 +16,7 @@ let loadCatalogo = () => {
 
                 let plantilla =
                     `<div class="card card-deck border-dark m-3 bg-warning col-md-3 border-top divFoto" >
-          <img class ="card-img-top"src="${imagen}" alt="${nombre}">
+          <img class ="card-img-top imageProduct"src="${imagen}" alt="${nombre}">
           <div class="column">
             <div class="card-body">
                 <h5 class="nombre">${nombre}</h5>
@@ -25,6 +25,7 @@ let loadCatalogo = () => {
                 <p class="card-text">${menu}</p>
             </div>
             <div class="precioDiv">
+            
             <p class="precio">${precio}</p>
             </div>
             </div>

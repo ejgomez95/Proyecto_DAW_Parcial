@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="ltr">
+<html lang="an" dir="ltr">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
@@ -11,39 +11,40 @@
         <meta name="author" content="Emilio Gomez, Kleber Avelino,
         Nicole Asqui, Edwin Ullaguari" />
         <meta name="keywords" content="EternityEC, DAW, 2020-1S"/>
-        
+
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
         crossorigin="anonymous">
-
-        <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-        </style>
-
-      </head>
+    </head>
     <body>
-      <div class="container-fluid">
-      <header class="row">
-
-      <nav id="navegacion" class="col-12 col-sm-12 navbar navbar-expand-lg navbar-light bg-warning">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        <img class="ml-5" id="logo" src="../img/logoEternity.png" alt="Logo Eternity"/>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item"><a class="nav-link text-dark" href="admin.html">ADMIN</a></li>
+      
+      <div class='eternity' data-step="2" data-intro="La barra de navegacion se ve así. A continuación te mostraremos cada uno de sus componentes">
+        <nav class="col-12 col-sm-12 navbar navbar-expand-lg navbar-light bg-warning navbar-fixed-top" >
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+          <img class="ml-5" id="logo" src="../img/logoEternity.png" alt="Logo Eternity" data-step="1" data-intro="Bievenido a la pagina web de Eternity.ec "/>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+  
+  
+              <li class="nav-item"><a class="nav-link text-dark" href="admin.html">ADMIN</a></li>
           <li class="nav-item"><a class="nav-link text-dark" href="crear_productos.html">CREAR PRODUCTOS</a></li>
-        </ul>
+  
+            </ul>
+          </div>
+        </nav>
       </div>
-      </nav>
-      </header>
 
-      <section id="cabecera">
-      <h1> Mi dashboard <br> </h1>
-      </section>
+      
+
+      <div class="cabecera"  >
+        <h2 class="tituloCabecera">Mi DashBoard</h2>
+      </div>
+    
       <div class="row">
         <div id="piechart"></div>
 
@@ -126,18 +127,22 @@
         <div id="columnchart_values" style="width: 900px; height: 300px;"></div>
       </div>
 
-    <footer class="row">
-      <ul class="center" id="lista">
-        <li><a href="https://www.instagram.com/eternity.ec/?hl=es-la" target="_blank"><img src="../img/icon/instagram.png" id="instagram" alt="instagram"></a>
-        </li>
-        <li><a href="https://es-la.facebook.com/eternity.ecu/" target="_blank"><img src="../img/icon/facebook.png" id="facebook" alt="facebook"></a>
-        </li>
-        <li><p class="mx-auto">Copyright &copy; 2020 - LastOne</p>
-        </li>
-      </ul>
+    </div>
+
+    <footer class="row footer">
+      <div>
+
+        <div class="iconosRedes">
+        <a href="https://www.instagram.com/eternity.ec/?hl=es-la" target="_blank"><img src="../img/icon/instagram.png" class="instagram"></a>
+          
+          <a href="https://es-la.facebook.com/eternity.ecu/" target="_blank"><img src="../img/icon/facebook.png" class="facebook"></a>
+        </div>
+        <p class="textFooter">Copyright &copy; 2020 - LastOne</p>
+     
+      </div>
 
     </footer>
-    </div>
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>

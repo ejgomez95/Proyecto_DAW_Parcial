@@ -4,127 +4,116 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
 
+        <link href="../css/style.css" rel="stylesheet" type="text/css" />
+
         <title>Eternity.ec</title>
 
         <meta name="author" content="Emilio Gomez, Kleber Avelino,
         Nicole Asqui, Edwin Ullaguari" />
         <meta name="keywords" content="EternityEC, DAW, 2020-1S"/>
+
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
         crossorigin="anonymous">
-
-        <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-        </style>
-
-        <link href="../css/style.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
       
-      <div class="container-fluid">
-      <header class="row">
+      <div class='eternity' data-step="2" data-intro="La barra de navegacion se ve así. A continuación te mostraremos cada uno de sus componentes">
+        <nav class="col-12 col-sm-12 navbar navbar-expand-lg navbar-light bg-warning navbar-fixed-top" >
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+          <img class="ml-5" id="logo" src="../img/logoEternity.png" alt="Logo Eternity" data-step="1" data-intro="Bievenido a la pagina web de Eternity.ec "/>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+  
+  
+              <li class="nav-item"><a class="nav-link text-dark" href="home.html" data-step="3" data-intro="Esta es la pagina principal. Tú estas aqui">HOME</a></li>
+              <li class="nav-item"><a class="nav-link text-dark" href="nosotros.html" data-step="4" data-intro="Aqui sabras sobre Eternity.ec y de los creadores de esta pagina">NOSOTROS</a></li>
+              <li class="nav-item"><a class="nav-link text-dark" href="productos.html" data-step="5" data-intro="Aqui esta el catalogo de Eternity.ec">PRODUCTOS</a></li>
+              <li class="nav-item"><a class="nav-link text-dark" href="noticias.html" data-step="6" data-intro="Descubre sobre las buenas nuevas" >NOTICIAS</a></li>
+              <li class="nav-item active"><a class="nav-link text-dark" href="contactanos.html" data-step="7" data-intro="Finalmente, si necesitas hacernos saber algo, aqui nos podras contactar">CONTÁCTANOS</a></li>
+  
+            </ul>
+          </div>
+        </nav>
+      </div>
 
-
-      <nav id="navegacion" class="col-12 col-sm-12 navbar navbar-expand-lg navbar-light bg-warning">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
-        aria-controls="navbarSupportedContent" aria-expanded="false" 
-        aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        <img class="ml-5" id="logo" src="../img/logoEternity.png" alt="Logo Eternity"/>
-        <div  class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-
-          <li class="nav-item active"><a class="nav-link text-dark" href="home.html">HOME</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="nosotros.html">NOSOTROS</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="productos.html">PRODUCTOS</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="noticias.html">NOTICIAS</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="contactanos.html">CONTÁCTANOS</a></li>
-
-        </ul>
-        </div>
-      </nav>
-      </header>
-
-    <section id="formulario">
-    <h1>Contáctanos</h1>
-    <form class="row" >
-
-      <p class="col-xs-12 col-md-6">
-        <label for="nombres" >Nombres:</label>
-        <input type="text" id="nombres" class = "form-control" name="nombres" required placeholder="Nombres Completos">
-      </p>
-
-      <p class="col-xs-12 col-md-6">
-        <label for="apellidos">Apellidos:</label>
-        <input type="text" id="apellidos" class = "form-control" name="apellidos" required placeholder="Apellidos Completos">
-      </p>
-
-
-      <p class="col-xs-12 col-md-6">
-        <label for="telefono">Teléfono Celular :</label>
-        <input type="text" id="telefono" class = "form-control" name="telefono" required>
-      </p>
-
-      <p class="col-xs-12 col-md-6">
-        <label for="genero">Género :</label>
-        
-        <select class = "form-control" id="genero">
-          <option value = "hombre">Hombre</option>
-          <option value = "mujer">Mujer</option>
-        </select>
-      </p>
       
 
-      <p class="col-xs-12 col-md-6">
-        <label for="nacimiento">Fecha de nacimiento :</label>
-        <input type="date" id="nacimiento" class = "form-control" name="nacimiento">
-      </p>
+      <div class="cabecera"  >
+        <h2 class="tituloCabecera">Contáctanos</h2>
 
-      <p class="col-xs-12 col-md-6">
-        <label for="correo">Correo electrónico:</label>
-        <input type="email" id="correo" class = "form-control" name="correo" required>
-      </p>
 
-      <p class="col-xs-12 col-md-6">
-        <label for="detalle">Detalle:</label><br>
-        <textarea id="detalle" name="detalle" rows="5" cols="30"></textarea>
-      </p>
+        <div id="formContactanos" align="center">
+              <form action="/action_page.php" id="form">
+                <label class="textForm" for="fname">Nombre</label> </br>
+                <input class="inputForm" type="text" id="fname" name="firstname" placeholder="Ingrese su nombre"></br>
+            
+                <label class="textForm" for="lname">Apellido</label></br>
+                <input class="inputForm" type="text" id="lname" name="lastname" placeholder="Ingrese su apellido"></br>
+            
+                <label class="textForm" for="country">Género</label></br>
+                <select  id="country" name="country">
+                  <option class="inputForm" value="australia">Hombre</option>
+                  <option class="inputForm" value="canada">Mujer</option>
+                </select></br>
 
-      <p class="col-xs-12 col-md-6">
-        <input type="checkbox" id="norobot" name="norobot" value="norobot" required>
-        <label for="norobot"> No soy un robot</label><br>
-      </p>
+                <label class="textForm" for="lname">Correo</label></br>
+                <input class="inputForm" type="text" id="lname" name="lastname" placeholder="Ingrese su correo"></br>
 
-      <p class="col-xs-12 col-md-6">
-        <input type="submit" value="Enviar">
-      </p>
+                <label class="textForm" for="nacimiento">Fecha de nacimiento</label></br>
+                <div>
+                <input class="inputForm" type="date" id="nacimiento"  name="nacimiento">
+                </div></br>
 
-    </form>
+              
 
-    </section>
-    <section id="mapa">
-    <h2>Visítanos en nuestro local</h2>
+                <label class="textForm" for="detalle">Detalle</label></br>
+                <div>
+                <textarea class="inputForm" type="text" id="detalle" name="detalle" rows="5" cols="30"></textarea>
+                </div></br>
 
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d296.3553004076213!2d-79.89066173367517!3d-2.0496163192415686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d12394d0ac605%3A0x98f35519369460a0!2sTecnoraymond!5e0!3m2!1ses-419!2sec!4v1594582680384!5m2!1ses-419!2sec" 
-      width="600" height="450" style="border:0;" allowfullscreen="" 
-      aria-hidden="false" tabindex="0"></iframe>
+                <label class="textForm" for="lname">Dirección</label></br>
+                <input class="inputForm" type="text" id="lname" name="lastname" placeholder="Ingrese su dirección"></br></br>
+              
+                <input type="submit" value="Enviar" id="botonContactanos">
+              </form>
 
-    </section>
+        </div>
+      
+      </div>
 
-    <footer class="row">
-      <ul class="center" id="lista">
-        <li><a href="https://www.instagram.com/eternity.ec/?hl=es-la" target="_blank"><img src="../img/icon/instagram.png" id="instagram" alt="instagram"></a>
-        </li>
-        <li><a href="https://es-la.facebook.com/eternity.ecu/" target="_blank"><img src="../img/icon/facebook.png" id="facebook" alt="facebook"></a>
-        </li>
-        <li><p class="mx-auto">Copyright &copy; 2020 - LastOne</p>
-        </li>
-      </ul>
+
+        <div id="seccionMapa" align="center">
+        <h2>Visítanos en nuestro local</h2>
+
+            <div id="mapa">
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d296.3553004076213!2d-79.89066173367517!3d-2.0496163192415686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d12394d0ac605%3A0x98f35519369460a0!2sTecnoraymond!5e0!3m2!1ses-419!2sec!4v1594582680384!5m2!1ses-419!2sec" 
+              id="iframe" ></iframe>
+            </div>
+        
+
+        </div>
+
+    <footer class="row footer">
+      <div>
+
+        <div class="iconosRedes">
+        <a href="https://www.instagram.com/eternity.ec/?hl=es-la" target="_blank"><img src="../img/icon/instagram.png" class="instagram"></a>
+          
+          <a href="https://es-la.facebook.com/eternity.ecu/" target="_blank"><img src="../img/icon/facebook.png" class="facebook"></a>
+        </div>
+        <p class="textFooter">Copyright &copy; 2020 - LastOne</p>
+     
+      </div>
+
     </footer>
-    </div>
+    
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
