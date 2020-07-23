@@ -1,119 +1,84 @@
 <!DOCTYPE html>
-<html lang="an" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
+<html lang="ar" dir="ltr">
 
-        <link href="../css/style.css" rel="stylesheet" type="text/css" />
-
-        <title>Eternity.ec</title>
-
-        <meta name="author" content="Emilio Gomez, Kleber Avelino,
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <title>Eternity.ec</title>
+    <meta name="author" content="Emilio Gomez, Kleber Avelino,
         Nicole Asqui, Edwin Ullaguari" />
-        <meta name="keywords" content="EternityEC, DAW, 2020-1S"/>
+    <meta name="keywords" content="EternityEC, DAW, 2020-1S" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
-        crossorigin="anonymous">
-    </head>
-    <body>
-      
-      <div class='eternity' data-step="2" data-intro="La barra de navegacion se ve así. A continuación te mostraremos cada uno de sus componentes">
-        <nav class="col-12 col-sm-12 navbar navbar-expand-lg navbar-light bg-warning navbar-fixed-top" >
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-          <img class="ml-5" id="logo" src="../img/logoEternity.png" alt="Logo Eternity" data-step="1" data-intro="Bievenido a la pagina web de Eternity.ec "/>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-  
-  
-              <li class="nav-item"><a class="nav-link text-dark" href="home.html" data-step="3" data-intro="Esta es la pagina principal. Tú estas aqui">HOME</a></li>
-              <li class="nav-item"><a class="nav-link text-dark" href="nosotros.html" data-step="4" data-intro="Aqui sabras sobre Eternity.ec y de los creadores de esta pagina">NOSOTROS</a></li>
-              <li class="nav-item"><a class="nav-link text-dark" href="productos.html" data-step="5" data-intro="Aqui esta el catalogo de Eternity.ec">PRODUCTOS</a></li>
-              <li class="nav-item"><a class="nav-link text-dark" href="noticias.html" data-step="6" data-intro="Descubre sobre las buenas nuevas" >NOTICIAS</a></li>
-              <li class="nav-item active"><a class="nav-link text-dark" href="contactanos.html" data-step="7" data-intro="Finalmente, si necesitas hacernos saber algo, aqui nos podras contactar">CONTÁCTANOS</a></li>
-  
-            </ul>
-          </div>
+<body>
+    <div class='eternity' data-step="2" data-intro="La barra de navegacion se ve así. A continuación te mostraremos cada uno de sus componentes">
+        <nav class="col-12 col-sm-12 navbar navbar-expand-lg navbar-light bg-warning navbar-fixed-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <img class="ml-5" id="logo" src="../img/logoEternity.png" alt="Logo Eternity" data-step="1" data-intro="Bievenido a la pagina web de Eternity.ec " />
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link text-dark" href="home.html" data-step="3" data-intro="Esta es la pagina principal. Tú estas aqui">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="nosotros.html" data-step="4" data-intro="Aqui sabras sobre Eternity.ec y de los creadores de esta pagina">NOSOTROS</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="productos.html" data-step="5" data-intro="Aqui esta el catalogo de Eternity.ec">PRODUCTOS</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="noticias.html" data-step="6" data-intro="Descubre sobre las buenas nuevas">NOTICIAS</a></li>
+                    <li class="nav-item active"><a class="nav-link text-dark" href="contactanos.html" data-step="7" data-intro="Finalmente, si necesitas hacernos saber algo, aqui nos podras contactar">CONTÁCTANOS</a></li>
+                </ul>
+            </div>
         </nav>
-      </div>
-
-      
-
-      <div class="cabecera"  >
+    </div>
+    <div class="cabecera">
         <h2 class="tituloCabecera">Contáctanos</h2>
-
-
-        <div id="formContactanos" align="center">
-              <form action="/action_page.php" id="form">
+        <div class="col-12 col-md-6 formContactanos">
+            <form action="/action_page.php" id="form">
                 <label class="textForm" for="fname">Nombre</label> </br>
                 <input class="inputForm" type="text" id="fname" name="firstname" placeholder="Ingrese su nombre"></br>
-            
                 <label class="textForm" for="lname">Apellido</label></br>
                 <input class="inputForm" type="text" id="lname" name="lastname" placeholder="Ingrese su apellido"></br>
-            
                 <label class="textForm" for="country">Género</label></br>
-                <select  id="country" name="country">
-                  <option class="inputForm" value="australia">Hombre</option>
-                  <option class="inputForm" value="canada">Mujer</option>
+                <select id="country" name="country">
+                    <option class="inputForm" value="australia">Hombre</option>
+                    <option class="inputForm" value="canada">Mujer</option>
                 </select></br>
-
                 <label class="textForm" for="lname">Correo</label></br>
                 <input class="inputForm" type="text" id="lname" name="lastname" placeholder="Ingrese su correo"></br>
-
                 <label class="textForm" for="nacimiento">Fecha de nacimiento</label></br>
                 <div>
-                <input class="inputForm" type="date" id="nacimiento"  name="nacimiento">
+                    <input class="inputForm" type="date" id="nacimiento" class="col-8 col-md-3" name="nacimiento">
                 </div></br>
-
-              
-
                 <label class="textForm" for="detalle">Detalle</label></br>
                 <div>
-                <textarea class="inputForm" type="text" id="detalle" name="detalle" rows="5" cols="30"></textarea>
+                    <textarea class="inputForm" type="text" id="detalle" name="detalle" rows="5" cols="30"></textarea>
                 </div></br>
-
                 <label class="textForm" for="lname">Dirección</label></br>
                 <input class="inputForm" type="text" id="lname" name="lastname" placeholder="Ingrese su dirección"></br></br>
-              
-                <input type="submit" value="Enviar" id="botonContactanos">
-              </form>
-
+                <input type="submit" value="Enviar" id="botonContactanos" class="col-8 col-md-3">
+            </form>
         </div>
-      
-      </div>
-
-
-        <div id="seccionMapa" align="center">
+    </div>
+    <div id="seccionMapa" align="center">
         <h2>Visítanos en nuestro local</h2>
-
-            <div id="mapa">
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d296.3553004076213!2d-79.89066173367517!3d-2.0496163192415686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d12394d0ac605%3A0x98f35519369460a0!2sTecnoraymond!5e0!3m2!1ses-419!2sec!4v1594582680384!5m2!1ses-419!2sec" 
-              id="iframe" ></iframe>
+        <div id="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d296.3553004076213!2d-79.89066173367517!3d-2.0496163192415686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d12394d0ac605%3A0x98f35519369460a0!2sTecnoraymond!5e0!3m2!1ses-419!2sec!4v1594582680384!5m2!1ses-419!2sec" id="iframe"></iframe>
+        </div>
+    </div>
+    <footer class="footer" align="center">
+        <div>
+            <div class="iconosRedes">
+                <a href="https://www.instagram.com/eternity.ec/?hl=es-la" target="_blank"><img src="../img/icon/instagram.png" class="instagram"></a>
+                <a href="https://es-la.facebook.com/eternity.ecu/" target="_blank"><img src="../img/icon/facebook.png" class="facebook"></a>
             </div>
-        
-
+            <p class="textFooter">Copyright &copy; 2020 - LastOne</p>
         </div>
-
-    <footer class="row footer">
-      <div>
-        <div class="iconosRedes">
-        <a href="https://www.instagram.com/eternity.ec/?hl=es-la" target="_blank"><img src="../img/icon/instagram.png" class="instagram"></a>
-        <a href="https://es-la.facebook.com/eternity.ecu/" target="_blank"><img src="../img/icon/facebook.png" class="facebook"></a>
-        </div>
-        <p class="textFooter">Copyright &copy; 2020 - LastOne</p>     
-      </div>
     </footer>
-    
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
 
-    </body>
-</html> 
+</html>

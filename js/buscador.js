@@ -16,21 +16,18 @@ let loadCatalogo = () => {
 
                 let plantilla =
                     `<div class="card card-deck border-dark m-3 bg-warning col-md-3 border-top divFoto" >
-          <img class ="card-img-top imageProduct"src="${imagen}" alt="${nombre}">
-          <div class="column">
-            <div class="card-body">
-                <h5 class="nombre">${nombre}</h5>
-                <p class="card-text">${keywords}</p>
-               
-                <p class="card-text">${menu}</p>
-            </div>
-            <div class="precioDiv">
-            
-            <p class="precio">${precio}</p>
-            </div>
-            </div>
-            
-        </div>`
+                    <img class ="card-img-top imageProduct"src="${imagen}" alt="${nombre}">
+                    <div class="column">
+                        <div class="card-body">
+                            <h5 class="nombre">${nombre}</h5>
+                            <p class="card-text">${keywords}</p>
+                            <p class="card-text">${menu}</p>
+                        </div>
+                        <div class="precioDiv">
+                        <p class="precio">${precio}</p>
+                        </div>
+                        </div>
+                    </div>`
 
                 document.getElementById('resultados').innerHTML += plantilla
 
@@ -53,7 +50,7 @@ let filtrar = () => {
 
         let arreglo = document.getElementById("resultados")
 
-        let elementos = arreglo.getElementsByClassName("card-title")
+        let elementos = arreglo.getElementsByClassName("nombre")
 
         let contenedor = document.getElementsByClassName("card")
 
