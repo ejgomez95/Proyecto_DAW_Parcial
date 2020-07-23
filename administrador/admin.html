@@ -1,151 +1,129 @@
 <!DOCTYPE html>
 <html lang="an" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
 
-        <link href="../css/style.css" rel="stylesheet" type="text/css" />
-
-        <title>Eternity.ec</title>
-
-        <meta name="author" content="Emilio Gomez, Kleber Avelino,
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <title>Eternity.ec</title>
+    <meta name="author" content="Emilio Gomez, Kleber Avelino,
         Nicole Asqui, Edwin Ullaguari" />
-        <meta name="keywords" content="EternityEC, DAW, 2020-1S"/>
+    <meta name="keywords" content="EternityEC, DAW, 2020-1S" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
-        crossorigin="anonymous">
-    </head>
-    <body>
-      
-      <div class='eternity' data-step="2" data-intro="La barra de navegacion se ve así. A continuación te mostraremos cada uno de sus componentes">
-        <nav class="col-12 col-sm-12 navbar navbar-expand-lg navbar-light bg-warning navbar-fixed-top" >
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-          <img class="ml-5" id="logo" src="../img/logoEternity.png" alt="Logo Eternity" data-step="1" data-intro="Bievenido a la pagina web de Eternity.ec "/>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-  
-  
-              <li class="nav-item"><a class="nav-link text-dark" href="admin.html">ADMIN</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="crear_productos.html">CREAR PRODUCTOS</a></li>
-  
-            </ul>
-          </div>
+<body>
+    <div class='eternity' data-step="2" data-intro="La barra de navegacion se ve así. A continuación te mostraremos cada uno de sus componentes">
+        <nav class="col-12 col-sm-12 navbar navbar-expand-lg navbar-light bg-warning navbar-fixed-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <img class="ml-5" id="logo" src="../img/logoEternity.png" alt="Logo Eternity" data-step="1" data-intro="Bievenido a la pagina web de Eternity.ec " />
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link text-dark" href="admin.html">DASHBOARD</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="crear_productos.html">CREAR PRODUCTOS</a></li>
+                </ul>
+            </div>
         </nav>
-      </div>
-
-      
-
-      <div class="cabecera"  >
+    </div>
+    <div class="cabecera">
         <h2 class="tituloCabecera">Mi DashBoard</h2>
-      </div>
-    
-      <div class="row">
-        <div id="piechart"></div>
-
+    </div>
+    <div class="col" align="center">
+        <div id="graficas" class="row">
+            <div id="piechart" class="col-12 col-md-5"></div>
+            <div id="columnchart_values" class="col-12 col-md-5"></div>
+        </div>
         <script src="https://www.gstatic.com/charts/loader.js"></script>
-
         <script>
-          // Load google charts
-          google.charts.load('current', {
+        // Load google charts
+        google.charts.load('current', {
             'packages': ['corechart']
-          });
-          google.charts.setOnLoadCallback(drawChart);
+        });
+        google.charts.setOnLoadCallback(drawChart);
 
-          // Draw the chart and set the chart values
-          function drawChart() {
+        // Draw the chart and set the chart values
+        function drawChart() {
             var data = google.visualization.arrayToDataTable([
-              ['Task', 'Hours per Day'],
-              ['Torta de chocolate', 8],
-              ['Pudin', 2],
-              ['Bollo', 4],
-              ['Torta mojada', 2],
-              ['Otros', 8]
+                ['Task', 'Hours per Day'],
+                ['Torta de chocolate', 8],
+                ['Pudin', 2],
+                ['Bollo', 4],
+                ['Torta mojada', 2],
+                ['Otros', 8]
             ]);
 
             // Optional; add a title and set the width and height of the chart
             var options = {
-              'title': 'Productos mas vendidos',
-              'width': 550,
-              'height': 400
+                'title': 'Productos mas vendidos',
+                'width': 650,
+                'height': 550
             };
 
             // Display the chart inside the <div> element with id="piechart"
             var chart = new google.visualization.PieChart(document.getElementById('piechart'));
             chart.draw(data, options);
-          }
+        }
         </script>
-
         <script>
-          google.charts.load("current", {
+        google.charts.load("current", {
             packages: ['corechart']
-          });
-          google.charts.setOnLoadCallback(drawChart);
+        });
+        google.charts.setOnLoadCallback(drawChart);
 
-          function drawChart() {
+        function drawChart() {
             var data = google.visualization.arrayToDataTable([
-              ["Element", "Density", {
-                role: "style"
-              }],
-              ["Enero", 8.94, "#b87333"],
-              ["Febrero", 10.49, "silver"],
-              ["Marzo", 19.30, "gold"],
-              ["Abril", 21.45, "color: #e5e4e2"]
+                ["Element", "Density", {
+                    role: "style"
+                }],
+                ["Enero", 8.94, "#b87333"],
+                ["Febrero", 10.49, "silver"],
+                ["Marzo", 19.30, "gold"],
+                ["Abril", 21.45, "color: #e5e4e2"]
             ]);
 
             var view = new google.visualization.DataView(data);
             view.setColumns([0, 1,
-              {
-                calc: "stringify",
-                sourceColumn: 1,
-                type: "string",
-                role: "annotation"
-              },
-              2
+                {
+                    calc: "stringify",
+                    sourceColumn: 1,
+                    type: "string",
+                    role: "annotation"
+                },
+                2
             ]);
 
             var options = {
-              title: "Ventas por mes",
-              width: 600,
-              height: 400,
-              bar: {
-                groupWidth: "95%"
-              },
-              legend: {
-                position: "none"
-              },
+                title: "Ventas por mes",
+                width: 650,
+                height: 550,
+                bar: {
+                    groupWidth: "95%"
+                },
+                legend: {
+                    position: "none"
+                },
             };
             var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
             chart.draw(view, options);
-          }
+        }
         </script>
-        <div id="columnchart_values" style="width: 900px; height: 300px;"></div>
-      </div>
-
     </div>
-
-    <footer class="row footer">
-      <div>
-
-        <div class="iconosRedes">
-        <a href="https://www.instagram.com/eternity.ec/?hl=es-la" target="_blank"><img src="../img/icon/instagram.png" class="instagram"></a>
-          
-          <a href="https://es-la.facebook.com/eternity.ecu/" target="_blank"><img src="../img/icon/facebook.png" class="facebook"></a>
+    <footer class="footer" align="center">
+        <div>
+            <div class="iconosRedes">
+                <a href="https://www.instagram.com/eternity.ec/?hl=es-la" target="_blank"><img src="../img/icon/instagram.png" class="instagram"></a>
+                <a href="https://es-la.facebook.com/eternity.ecu/" target="_blank"><img src="../img/icon/facebook.png" class="facebook"></a>
+            </div>
+            <p class="textFooter">Copyright &copy; 2020 - LastOne</p>
         </div>
-        <p class="textFooter">Copyright &copy; 2020 - LastOne</p>
-     
-      </div>
-
     </footer>
-    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
 
-    </body>
 </html>

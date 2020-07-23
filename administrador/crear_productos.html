@@ -1,96 +1,63 @@
 <!DOCTYPE html>
 <html lang="an" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
 
-        <title>Eternity.ec</title>
-
-        <meta name="author" content="Emilio Gomez, Kleber Avelino,
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Eternity.ec</title>
+    <meta name="author" content="Emilio Gomez, Kleber Avelino,
         Nicole Asqui, Edwin Ullaguari" />
-        <meta name="keywords" content="EternityEC, DAW, 2020-1S"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
-        crossorigin="anonymous">
+    <meta name="keywords" content="EternityEC, DAW, 2020-1S" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+</head>
 
-        <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-        </style>
-
-        <link href="../css/style.css" rel="stylesheet" type="text/css" />
-    </head>
-    <body>
-      
-      <div class="container-fluid">
-      <header class="row">
-
-
-      <nav id="navegacion" class="col-12 col-sm-12 navbar navbar-expand-lg navbar-light bg-warning">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
-        aria-controls="navbarSupportedContent" aria-expanded="false" 
-        aria-label="Toggle navigation">
+<body>
+    <div class='eternity' data-step="2" data-intro="La barra de navegacion se ve así. A continuación te mostraremos cada uno de sus componentes">
+        <nav class="col-12 col-sm-12 navbar navbar-expand-lg navbar-light bg-warning navbar-fixed-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-        <img class="ml-5" src="../img/logoEternity.png" alt="Logo Eternity"/>
-        <div  class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-
-          <li class="nav-item active"><a class="nav-link text-dark" href="admin.html">ADMIN</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="crear_productos.html">CREAR PRODUCTOS</a></li>
-        </ul>
-        </div>
-      </nav>
-      </header>
-
-    <section id="formulario">
-    <h2>Crear nuevo producto</h2>
-    <form>
-
-      <p>
-        <label for="nombres">Nombre:</label>
-        <input type="text" id="nombres" class = "form-control" name="nombres" required >
-      </p>
-
-      <p>
-        <label for="apellidos">Keywords:</label>
-        <input type="text" id="apellidos" class = "form-control" name="apellidos" required>
-      </p>
-
-      <p>
-        <label for="precio">Precio :</label>
-        <input type="text" id="precio" class = "form-control" name="precio">
-      </p>
-
-      <p>
-        <label for="menu">Menu: </label>
-        <input type="text" id="menu" class = "form-control" name="menu">
-      </p>
-
-      <p>
-        <input type="submit" value="Enviar">
-      </p>
-
-    </form>
-
-    </section>
-
-    <footer class="row">
-      <ul class="center" id="lista">
-        <li><a href="https://www.instagram.com/eternity.ec/?hl=es-la" target="_blank"><img src="../img/icon/instagram.png" id="instagram" alt="instagram"></a>
-        </li>
-        <li><a href="https://es-la.facebook.com/eternity.ecu/" target="_blank"><img src="../img/icon/facebook.png" id="facebook" alt="facebook"></a>
-        </li>
-        <li><p class="mx-auto">Copyright &copy; 2020 - LastOne</p>
-        </li>
-      </ul>
-    </footer>
+            <img class="ml-5" id="logo" src="../img/logoEternity.png" alt="Logo Eternity" data-step="1" data-intro="Bievenido a la pagina web de Eternity.ec " />
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link text-dark" href="admin.html">DASHBOARD</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="crear_productos.html">CREAR PRODUCTOS</a></li>
+                </ul>
+            </div>
+        </nav>
     </div>
+    <div class="cabecera">
+        <h2 class="tituloCabecera">Crear nuevo producto</h2>
+        <div class="col-12 col-md-6 formContactanos">
+            <form action="/action_page.php" id="form">
+                <label class="textForm" for="fname">Nombre:</label> </br>
+                <input class="inputForm" type="text" id="fname" name="firstname" placeholder="Ingrese su nombre"></br>
+                <label class="textForm" for="lname">Keywords:</label></br>
+                <input class="inputForm" type="text" id="lname" name="lastname" placeholder="Ingrese el keyword"></br>
+                <label class="textForm" for="lname">Precio:</label></br>
+                <input class="inputForm" type="text" id="lname" name="lastname" placeholder="Ingrese el precio"></br>
+                <label class="textForm" for="lname">Menú</label></br>
+                <input class="inputForm" type="text" id="lname" name="lastname" placeholder="Ingrese menú"></br></br>
+                <input type="submit" class="col-8 col-md-3" value="Enviar" id="botonContactanos">
+            </form>
+        </div>
+    </div>
+    <footer class="footer" align="center">
+        <div>
+            <div class="iconosRedes">
+                <a href="https://www.instagram.com/eternity.ec/?hl=es-la" target="_blank"><img src="../img/icon/instagram.png" class="instagram"></a>
+                <a href="https://es-la.facebook.com/eternity.ecu/" target="_blank"><img src="../img/icon/facebook.png" class="facebook"></a>
+            </div>
+            <p class="textFooter">Copyright &copy; 2020 - LastOne</p>
+        </div>
+    </footer>
+    <script src="../js/intro.js"></script>
+</body>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-    </body>
-</html> 
+</html>

@@ -139,8 +139,32 @@ h3 {
 
 /* Home   */
 
+#bienvinido {
+    margin-bottom: 3.5%;
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline red;
+}
+
+.boxHome {
+    border-radius: 10px;
+    border: 1.5px solid #47acdb;
+    margin-top: 45px;
+    background-color: #AFFE9E;
+    padding: 15px;
+    width: 55%;
+    margin: 0 auto;
+    margin-top: 2.5%;
+}
+
+.menu {
+    margin-top: 8%;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
 #carouselExampleControls {
-    width: 65%;
+    width: 55%;
     margin-top: 2.5%;
     align-content: center;
     align-items: center;
@@ -156,11 +180,6 @@ h3 {
 .carousel-inner {
     height: 450px;
     width: 500px;
-}
-
-.menu {
-    margin-top: 125px;
-    margin-bottom: 50px;
 }
 
 .eternity {
@@ -219,6 +238,8 @@ h3 {
     background-color: #AFFE9E;
     padding: 15px;
     width: 55%;
+    margin: 0 auto;
+    margin-top: 2.5%;
 }
 
 ul.nombresIntegrantes {
@@ -242,16 +263,32 @@ ul.nombresIntegrantes {
 /* estilos footer*/
 
 .footer {
-    background-color: #c7a0a0;
-    height: 85px;
+    background-color: #F39BB4;
+    justify-content: center;
+    margin-top: 10%;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#piechart {
     align-content: center;
     align-items: center;
     justify-content: center;
+    /* 
+    margin-right: 10%;
+    margin-left: 5%; */
+    margin: 0 auto;
+    margin-bottom: 10%;
+}
+
+#graficas {
+    margin: 0 auto;
+    width: 100%;
 }
 
 #columnchart_values {
-    background-color: #c7a0a0;
-    height: 85px;
+    margin: 0 auto;
     align-content: center;
     align-items: center;
     justify-content: center;
@@ -262,6 +299,7 @@ ul.nombresIntegrantes {
     margin-top: 5px;
     color: white;
     text-align: center;
+    padding-bottom: 0.5%;
 }
 
 .facebook,
@@ -274,6 +312,7 @@ ul.nombresIntegrantes {
     align-content: center;
     align-items: center;
     justify-content: center;
+    padding-top: 0.5%;
 }
 
 .facebook:hover {
@@ -297,8 +336,9 @@ ul.nombresIntegrantes {
 }
 
 .textoNoticias {
-    font-size: 15.5px;
+    font-size: 16.5px;
     margin-top: 2.5%;
+    text-align: center;
 }
 
 
@@ -321,7 +361,7 @@ ul.nombresIntegrantes {
 }
 
 .ml-5 {
-    width: 125px;
+    width: 75%;
     height: 50px;
 }
 
@@ -399,12 +439,13 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 
-#formContactanos {
-    width: 50%;
-    background-color: #AFFE9E;
-    border-radius: 10px 10px 10px 10px;
-    padding: 5px;
+.formContactanos {
     margin: 0 auto;
+    border-radius: 10px;
+    border: 1.5px solid #47acdb;
+    margin-top: 45px;
+    background-color: #AFFE9E;
+    padding: 15px;
 }
 
 .textForm {
@@ -466,10 +507,11 @@ img {
     margin-left: 5%;
 }
 
-footer {
+
+/* footer {
     margin-top: 40%;
     font-weight: 700;
-}
+} */
 
 
 /* #mapa {
@@ -502,11 +544,6 @@ footer {
     list-style: none;
     text-align: center;
     display: block;
-}
-
-.menu {
-    text-align: center;
-    padding: 10px;
 }
 
 .eternityJS {
