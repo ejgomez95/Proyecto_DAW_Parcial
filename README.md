@@ -13,7 +13,7 @@ En el presente proyecto se presenta una propuesta de diseño web, la misma esta 
 * Manejador de archivos (.js)
 * MAnejador de archivos (.css)
 
-## Autores
+## Autores 📌
 * Emilio Gomez.
 * Kleber Avelino.
 * Nicole Asqui.
